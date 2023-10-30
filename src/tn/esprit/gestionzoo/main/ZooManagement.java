@@ -88,6 +88,7 @@ public class ZooManagement {
 
         System.out.println("**************PROSIT7:TEST FCT ADD**************");
         try {
+            /********** NUMBER_OF_CAGES = 5 *********/
             myZoo.addAnimal(lion);
             myZoo.addAnimal(dog3);
 

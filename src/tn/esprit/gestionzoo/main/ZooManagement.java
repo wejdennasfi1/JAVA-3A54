@@ -18,13 +18,22 @@ public class ZooManagement {
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
 
 
-        System.out.println(myZoo.addAnimal(lion));
-        System.out.println(myZoo.addAnimal(dog));
+        /*System.out.println("**************PROSIT7:TEST FCT ADD**************");
+        try {
+            myZoo.addAnimal(lion);
+
+
+        } catch (ZooFullException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("**************PROSIT7:END TEST**************");*/
 
         myZoo.displayAnimals();
 
         System.out.println(myZoo.searchAnimal(dog));
         Animal dog2 = new Animal("Canine", "lll", 2, true);
+        Animal dog3 = new Animal("Canine", "lll", -2, true);
         System.out.println(myZoo.searchAnimal(dog2));
 
 //           System.out.println(myZoo.removeAnimal(dog));
@@ -74,6 +83,21 @@ public class ZooManagement {
         System.out.println(myZoo.maxPenguinSwimmingDepth());
         myZoo.displayNumberOfAquaticsByType();
 
+
+        System.out.println("****************PROSIT7********************");
+
+        System.out.println("**************PROSIT7:TEST FCT ADD**************");
+        try {
+            myZoo.addAnimal(lion);
+            myZoo.addAnimal(dog3);
+
+
+
+        } catch (ZooFullException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("**************PROSIT7:END TEST**************");
 
 
     }
